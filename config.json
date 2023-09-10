@@ -1,0 +1,15 @@
+{
+    "mongodb_uri": "mongodb+srv://<logan>:<308630863086>@cluster.mongodb.net/ecommerce"
+  }
+  const mongoose = require('mongoose');
+
+// Usa la cadena de conexión desde la configuración
+const dbURI = config.mongodb_uri;
+
+mongoose.connect(dbURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+const mongoose = require('mongoose');
+
+
